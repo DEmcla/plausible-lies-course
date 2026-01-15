@@ -168,13 +168,15 @@ This course complements Bergstrom & West's "Calling Bullshit" (statistical and m
 
 ## License
 
-[Add your preferred license]
+This work is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+You are free to share and adapt this material for non-commercial purposes, provided you give appropriate credit and distribute any derivatives under the same license.
 
 ---
 
 ## Contributing
 
-[Add contribution guidelines if desired]
+This repository is not accepting direct contributions. If you find errors, broken links, or have suggestions for improvement, please [open an issue](../../issues).
 
 ---
 
