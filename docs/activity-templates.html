@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCI 247: Activity Templates</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #1a5276;
+            border-bottom: 3px solid #1a5276;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2874a6;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 40px;
+            page-break-before: always;
+        }
+        h2:first-of-type {
+            page-break-before: avoid;
+        }
+        h3 {
+            color: #1a5276;
+            margin-top: 20px;
+        }
+        .template {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        .template h4 {
+            margin-top: 0;
+            color: #2874a6;
+        }
+        .field {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 10px 0;
+            min-height: 60px;
+        }
+        .field-label {
+            font-weight: bold;
+            color: #1a5276;
+            margin-bottom: 5px;
+        }
+        .field-hint {
+            font-size: 0.85em;
+            color: #666;
+            font-style: italic;
+            margin-top: 5px;
+        }
+        .note {
+            background-color: #fff9e6;
+            border-left: 4px solid #f0ad4e;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #2874a6;
+            color: white;
+        }
+        .week-tag {
+            display: inline-block;
+            background-color: #2874a6;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            margin-left: 10px;
+        }
+        @media print {
+            .template {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Activity Templates</h1>
+
+<p>Use these templates for weekly activities. Copy the structure into your submission or portfolio as appropriate.</p>
+
+<h2>Model Matching Exercise <span class="week-tag">Week 1</span></h2>
+
+<p><strong>Purpose:</strong> Demonstrate understanding of different AI model types and their appropriate use cases.</p>
+
+<div class="template">
+    <h4>Instructions</h4>
+    <p>For each task below, identify the most appropriate type of AI model and explain why.</p>
+
+    <table>
+        <tr>
+            <th>Task</th>
+            <th>Model Type</th>
+            <th>Reasoning</th>
+        </tr>
+        <tr>
+            <td>Write a professional email response</td>
+            <td><div class="field" style="min-height: 30px;"></div></td>
+            <td><div class="field" style="min-height: 30px;"></div></td>
+        </tr>
+        <tr>
+            <td>Identify whether a photo contains a cat or dog</td>
+            <td><div class="field" style="min-height: 30px;"></div></td>
+            <td><div class="field" style="min-height: 30px;"></div></td>
+        </tr>
+        <tr>
+            <td>Suggest products based on purchase history</td>
+            <td><div class="field" style="min-height: 30px;"></div></td>
+            <td><div class="field" style="min-height: 30px;"></div></td>
+        </tr>
+        <tr>
+            <td>Filter spam from your inbox</td>
+            <td><div class="field" style="min-height: 30px;"></div></td>
+            <td><div class="field" style="min-height: 30px;"></div></td>
+        </tr>
+        <tr>
+            <td>Create an illustration from a text description</td>
+            <td><div class="field" style="min-height: 30px;"></div></td>
+            <td><div class="field" style="min-height: 30px;"></div></td>
+        </tr>
+    </table>
+
+    <div class="field-label">Reflection</div>
+    <p class="field-hint">What patterns do you notice about which types of models are suited for which tasks?</p>
+    <div class="field"></div>
+</div>
+
+<h2>Training Data Detective <span class="week-tag">Week 1</span></h2>
+
+<p><strong>Purpose:</strong> Practice investigating what information is (and isn't) available about an AI tool's training data.</p>
+
+<div class="template">
+    <h4>Tool Selected</h4>
+    <div class="field-label">Tool Name and URL</div>
+    <div class="field" style="min-height: 30px;"></div>
+
+    <h4>Investigation</h4>
+
+    <div class="field-label">What does the company say about its training data?</div>
+    <p class="field-hint">Quote directly from official documentation, website, or terms of service. Include source links.</p>
+    <div class="field"></div>
+
+    <div class="field-label">What is NOT disclosed?</div>
+    <p class="field-hint">What questions about training data remain unanswered?</p>
+    <div class="field"></div>
+
+    <div class="field-label">What can you infer?</div>
+    <p class="field-hint">Based on the tool's capabilities and limitations, what can you reasonably guess about its training data?</p>
+    <div class="field"></div>
+
+    <div class="field-label">Red flags or concerns</div>
+    <p class="field-hint">Did you find anything concerning about data sources, consent, or representation?</p>
+    <div class="field"></div>
+
+    <h4>Reflection</h4>
+    <div class="field-label">How easy or difficult was it to find this information? What does that tell you?</div>
+    <div class="field"></div>
+</div>
+
+<h2>Reproducibility Test <span class="week-tag">Week 2</span></h2>
+
+<p><strong>Purpose:</strong> Test whether different AI models give consistent results for the same prompt.</p>
+
+<div class="template">
+    <h4>Methodology</h4>
+
+    <div class="field-label">Prompt Used</div>
+    <p class="field-hint">Copy the exact prompt. It should be a factual question you can verify.</p>
+    <div class="field"></div>
+
+    <div class="field-label">Why did you choose this prompt?</div>
+    <div class="field" style="min-height: 40px;"></div>
+
+    <h4>Results</h4>
+
+    <table>
+        <tr>
+            <th>Model</th>
+            <th>Response (summarized)</th>
+            <th>Factually Correct?</th>
+            <th>Confidence Level Displayed</th>
+        </tr>
+        <tr>
+            <td>ChatGPT (free)</td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+        </tr>
+        <tr>
+            <td>Claude (free)</td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+        </tr>
+        <tr>
+            <td>Gemini (free)</td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+        </tr>
+    </table>
+
+    <h4>Analysis</h4>
+
+    <div class="field-label">Did the models agree?</div>
+    <div class="field" style="min-height: 40px;"></div>
+
+    <div class="field-label">How did you verify which answer (if any) was correct?</div>
+    <div class="field"></div>
+
+    <div class="field-label">What does this tell you about trusting AI responses?</div>
+    <div class="field"></div>
+</div>
+
+<h2>Prompt Sensitivity <span class="week-tag">Week 2</span></h2>
+
+<p><strong>Purpose:</strong> Test how sensitive AI responses are to prompt phrasing.</p>
+
+<div class="template">
+    <h4>Setup</h4>
+
+    <div class="field-label">Model Used</div>
+    <div class="field" style="min-height: 30px;"></div>
+
+    <div class="field-label">Core Question (what you're trying to ask)</div>
+    <div class="field" style="min-height: 40px;"></div>
+
+    <h4>Three Phrasings</h4>
+
+    <table>
+        <tr>
+            <th>Phrasing</th>
+            <th>Exact Prompt</th>
+            <th>Response Summary</th>
+        </tr>
+        <tr>
+            <td>Formal/professional</td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+        </tr>
+        <tr>
+            <td>Casual/conversational</td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+        </tr>
+        <tr>
+            <td>With typos/errors</td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+        </tr>
+    </table>
+
+    <h4>Analysis</h4>
+
+    <div class="field-label">How did responses differ?</div>
+    <div class="field"></div>
+
+    <div class="field-label">What implications does this have for reproducibility and reliability?</div>
+    <div class="field"></div>
+</div>
+
+<h2>Graph or Garbage <span class="week-tag">Week 4</span></h2>
+
+<p><strong>Purpose:</strong> Evaluate the validity of AI-generated data visualizations.</p>
+
+<div class="template">
+    <h4>Setup</h4>
+
+    <div class="field-label">Data provided to AI</div>
+    <p class="field-hint">Describe or paste the data you gave to the AI</p>
+    <div class="field"></div>
+
+    <div class="field-label">Prompt used to request visualization</div>
+    <div class="field" style="min-height: 40px;"></div>
+
+    <div class="field-label">AI tool used</div>
+    <div class="field" style="min-height: 30px;"></div>
+
+    <h4>The Visualization</h4>
+    <p class="field-hint">Insert or describe the generated graph</p>
+    <div class="field" style="min-height: 100px;"></div>
+
+    <h4>Evaluation Checklist</h4>
+
+    <table>
+        <tr>
+            <th>Criterion</th>
+            <th>Yes/No/Partial</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td>Y-axis starts at zero (if applicable)</td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+        </tr>
+        <tr>
+            <td>Axes are clearly labeled</td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+        </tr>
+        <tr>
+            <td>Scale is uniform/appropriate</td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+        </tr>
+        <tr>
+            <td>Chart type is appropriate for data</td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+        </tr>
+        <tr>
+            <td>Data is accurately represented</td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+        </tr>
+        <tr>
+            <td>Title/caption is accurate</td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+        </tr>
+    </table>
+
+    <h4>Verdict</h4>
+    <div class="field-label">Graph or Garbage? Explain your judgment.</div>
+    <div class="field"></div>
+</div>
+
+<h2>Benchmark BS Detection <span class="week-tag">Week 4</span></h2>
+
+<p><strong>Purpose:</strong> Critically evaluate AI benchmark claims.</p>
+
+<div class="template">
+    <h4>Benchmark Selected</h4>
+
+    <div class="field-label">Source (with link)</div>
+    <div class="field" style="min-height: 30px;"></div>
+
+    <div class="field-label">What claim is being made?</div>
+    <p class="field-hint">e.g., "Model X outperforms Model Y on task Z"</p>
+    <div class="field"></div>
+
+    <h4>Critical Evaluation</h4>
+
+    <table>
+        <tr>
+            <th>Question</th>
+            <th>Finding</th>
+        </tr>
+        <tr>
+            <td>Who conducted the benchmark?</td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+        </tr>
+        <tr>
+            <td>Is there potential conflict of interest?</td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+        </tr>
+        <tr>
+            <td>What exactly was measured?</td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+        </tr>
+        <tr>
+            <td>Does the benchmark reflect real-world use?</td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+        </tr>
+        <tr>
+            <td>Is data contamination possible?</td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+        </tr>
+        <tr>
+            <td>Are error bars or confidence intervals shown?</td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+        </tr>
+    </table>
+
+    <h4>Issues Identified</h4>
+    <div class="field-label">List at least two potential problems with this benchmark</div>
+    <div class="field"></div>
+
+    <h4>Conclusion</h4>
+    <div class="field-label">How much should you trust this benchmark claim? Why?</div>
+    <div class="field"></div>
+</div>
+
+<h2>Make It Lie <span class="week-tag">Week 4</span></h2>
+
+<p><strong>Purpose:</strong> Demonstrate how the same data can support opposing conclusions through visualization choices.</p>
+
+<div class="template">
+    <h4>The Data</h4>
+    <div class="field-label">Dataset used (describe or paste)</div>
+    <div class="field"></div>
+
+    <h4>Visualization A: Supporting Conclusion 1</h4>
+
+    <div class="field-label">Conclusion A</div>
+    <p class="field-hint">What story does this visualization tell?</p>
+    <div class="field" style="min-height: 40px;"></div>
+
+    <div class="field-label">Visualization A</div>
+    <p class="field-hint">Insert or describe</p>
+    <div class="field" style="min-height: 80px;"></div>
+
+    <div class="field-label">Techniques used to support this conclusion</div>
+    <p class="field-hint">e.g., axis manipulation, cherry-picked timeframe, chart type choice</p>
+    <div class="field"></div>
+
+    <h4>Visualization B: Supporting Conclusion 2 (opposite)</h4>
+
+    <div class="field-label">Conclusion B</div>
+    <div class="field" style="min-height: 40px;"></div>
+
+    <div class="field-label">Visualization B</div>
+    <div class="field" style="min-height: 80px;"></div>
+
+    <div class="field-label">Techniques used to support this conclusion</div>
+    <div class="field"></div>
+
+    <h4>Reflection</h4>
+    <div class="field-label">What does this exercise teach you about trusting data visualizations?</div>
+    <div class="field"></div>
+</div>
+
+<h2>Critique the Explanation <span class="week-tag">Week 5</span></h2>
+
+<p><strong>Purpose:</strong> Evaluate AI-generated explanations for clarity, accuracy, and completeness.</p>
+
+<div class="template">
+    <h4>Setup</h4>
+
+    <div class="field-label">Topic/concept you asked AI to explain</div>
+    <div class="field" style="min-height: 40px;"></div>
+
+    <div class="field-label">AI tool and prompt used</div>
+    <div class="field" style="min-height: 40px;"></div>
+
+    <h4>The AI's Explanation</h4>
+    <p class="field-hint">Paste the AI's response</p>
+    <div class="field" style="min-height: 100px;"></div>
+
+    <h4>Critique</h4>
+
+    <table>
+        <tr>
+            <th>Aspect</th>
+            <th>Issues Found</th>
+        </tr>
+        <tr>
+            <td>Factual accuracy</td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+        </tr>
+        <tr>
+            <td>Clarity for intended audience</td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+        </tr>
+        <tr>
+            <td>Missing information</td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+        </tr>
+        <tr>
+            <td>Misleading simplifications</td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+        </tr>
+        <tr>
+            <td>Unnecessary jargon</td>
+            <td><div class="field" style="min-height: 40px;"></div></td>
+        </tr>
+    </table>
+
+    <h4>Your Improved Version</h4>
+    <div class="field-label">Rewrite the explanation fixing the issues you identified</div>
+    <div class="field" style="min-height: 100px;"></div>
+</div>
+
+<h2>Methodology Audit <span class="week-tag">Week 5</span></h2>
+
+<p><strong>Purpose:</strong> Practice evaluating whether research/analysis is reproducible.</p>
+
+<div class="template">
+    <h4>Document Being Audited</h4>
+    <div class="field-label">Classmate's name and exercise being audited</div>
+    <div class="field" style="min-height: 30px;"></div>
+
+    <h4>Reproducibility Checklist</h4>
+
+    <table>
+        <tr>
+            <th>Element</th>
+            <th>Present?</th>
+            <th>Clear enough to reproduce?</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td>Tools/models identified</td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+        </tr>
+        <tr>
+            <td>Exact prompts provided</td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+        </tr>
+        <tr>
+            <td>Settings/parameters noted</td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+        </tr>
+        <tr>
+            <td>Date/time recorded</td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+        </tr>
+        <tr>
+            <td>Results documented completely</td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+            <td><div class="field" style="min-height: 20px;"></div></td>
+        </tr>
+    </table>
+
+    <h4>Assessment</h4>
+
+    <div class="field-label">Could you reproduce this work from the documentation alone?</div>
+    <div class="field" style="min-height: 40px;"></div>
+
+    <div class="field-label">What's missing or unclear?</div>
+    <div class="field"></div>
+
+    <div class="field-label">What's documented well?</div>
+    <div class="field"></div>
+
+    <h4>Constructive Feedback</h4>
+    <div class="field-label">Specific suggestions for improvement (be helpful, not harsh)</div>
+    <div class="field"></div>
+</div>
+
+<hr>
+
+<div class="note">
+    <p><strong>Using these templates:</strong> You may copy these structures into Word or submit directly through Canvas. The structure ensures you address all required components. Expand sections as needed—these are minimums, not maximums.</p>
+</div>
+
+</body>
+</html>

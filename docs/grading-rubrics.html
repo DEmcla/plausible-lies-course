@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCI 247: Grading Rubrics</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #1a5276;
+            border-bottom: 3px solid #1a5276;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2874a6;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 40px;
+            page-break-before: always;
+        }
+        h2:first-of-type {
+            page-break-before: avoid;
+        }
+        h3 {
+            color: #1a5276;
+            margin-top: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #2874a6;
+            color: white;
+        }
+        .excellent {
+            background-color: #d4edda;
+        }
+        .proficient {
+            background-color: #fff3cd;
+        }
+        .developing {
+            background-color: #f8d7da;
+        }
+        .incomplete {
+            background-color: #e2e3e5;
+        }
+        .weight {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+        .note {
+            background-color: #fff9e6;
+            border-left: 4px solid #f0ad4e;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .tier2 {
+            font-size: 0.8em;
+            color: #666;
+            font-style: italic;
+        }
+        .overview {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        @media print {
+            table {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Grading Rubrics</h1>
+
+<div class="overview">
+    <h3>Grading Scale</h3>
+    <ul>
+        <li><strong>Excellent (90-100%):</strong> Exceeds expectations. Demonstrates mastery.</li>
+        <li><strong>Proficient (75-89%):</strong> Meets expectations. Solid work with minor gaps.</li>
+        <li><strong>Developing (60-74%):</strong> Approaching expectations. Significant gaps but shows understanding.</li>
+        <li><strong>Incomplete (0-59%):</strong> Does not meet expectations. Major components missing or incorrect.</li>
+    </ul>
+</div>
+
+<h2>AI Tool Audit (25%)</h2>
+
+<p>Evaluate an unfamiliar AI tool using the course evaluation framework.</p>
+
+<div class="note">
+    <strong>Tier II Outcomes Assessed:</strong> Content Knowledge, Problem Solving, Source Evaluation
+</div>
+
+<table>
+    <tr>
+        <th>Criterion</th>
+        <th class="weight">Weight</th>
+        <th class="excellent">Excellent</th>
+        <th class="proficient">Proficient</th>
+        <th class="developing">Developing</th>
+        <th class="incomplete">Incomplete</th>
+    </tr>
+    <tr>
+        <td><strong>Tool Understanding</strong><br><span class="tier2">Content Knowledge</span></td>
+        <td class="weight">20%</td>
+        <td class="excellent">Correctly identifies model type with clear explanation of how it works. Demonstrates understanding of capabilities and limitations based on architecture.</td>
+        <td class="proficient">Correctly identifies model type with basic explanation. Some understanding of how architecture relates to capabilities.</td>
+        <td class="developing">Model type identified but explanation is vague or partially incorrect. Limited connection to capabilities.</td>
+        <td class="incomplete">Model type incorrect or not identified. No meaningful explanation of how the tool works.</td>
+    </tr>
+    <tr>
+        <td><strong>Framework Application</strong><br><span class="tier2">Problem Solving</span></td>
+        <td class="weight">30%</td>
+        <td class="excellent">All six framework components (Function, Data, Failures, Access, Terms, Impact) thoroughly addressed with specific evidence and examples.</td>
+        <td class="proficient">All six components addressed. Most include evidence. Some sections stronger than others.</td>
+        <td class="developing">Most components addressed but some missing or superficial. Limited evidence provided.</td>
+        <td class="incomplete">Several components missing. Little evidence. Framework not meaningfully applied.</td>
+    </tr>
+    <tr>
+        <td><strong>Source Evaluation</strong><br><span class="tier2">Source Evaluation</span></td>
+        <td class="weight">20%</td>
+        <td class="excellent">Multiple credible sources used. Critically evaluates company claims vs. independent sources. Acknowledges limitations of available information.</td>
+        <td class="proficient">Multiple sources used. Some distinction between company claims and independent evaluation. Sources generally credible.</td>
+        <td class="developing">Limited sources. Over-reliance on company marketing. Minimal critical evaluation of claims.</td>
+        <td class="incomplete">Single source or no sources cited. Accepts claims uncritically.</td>
+    </tr>
+    <tr>
+        <td><strong>Analysis Quality</strong><br><span class="tier2">Problem Solving</span></td>
+        <td class="weight">20%</td>
+        <td class="excellent">Nuanced analysis of trade-offs. Identifies non-obvious issues. Conclusions well-supported by evidence. Acknowledges uncertainty where appropriate.</td>
+        <td class="proficient">Reasonable analysis with clear conclusions. Trade-offs discussed. Most claims supported.</td>
+        <td class="developing">Basic analysis. Conclusions present but not well-supported. Trade-offs mentioned but not analyzed.</td>
+        <td class="incomplete">Little analysis. Conclusions missing or unsupported. Descriptive rather than analytical.</td>
+    </tr>
+    <tr>
+        <td><strong>Presentation</strong><br><span class="tier2">Communication</span></td>
+        <td class="weight">10%</td>
+        <td class="excellent">Clear organization. Professional writing. Appropriate for intended audience. Free of errors.</td>
+        <td class="proficient">Well-organized. Minor writing issues. Generally clear.</td>
+        <td class="developing">Organization unclear. Multiple writing issues. Some sections hard to follow.</td>
+        <td class="incomplete">Disorganized. Significant errors. Difficult to understand.</td>
+    </tr>
+</table>
+
+<h2>Personal Security Audit (25%)</h2>
+
+<p>Audit your digital footprint and implement real changes to improve security and privacy.</p>
+
+<div class="note">
+    <strong>Tier II Outcomes Assessed:</strong> Problem Solving, Communication
+</div>
+
+<table>
+    <tr>
+        <th>Criterion</th>
+        <th class="weight">Weight</th>
+        <th class="excellent">Excellent</th>
+        <th class="proficient">Proficient</th>
+        <th class="developing">Developing</th>
+        <th class="incomplete">Incomplete</th>
+    </tr>
+    <tr>
+        <td><strong>Audit Thoroughness</strong><br><span class="tier2">Problem Solving</span></td>
+        <td class="weight">25%</td>
+        <td class="excellent">Comprehensive review of accounts, permissions, privacy settings, data exposure. Discovers non-obvious vulnerabilities.</td>
+        <td class="proficient">Reviews major accounts and common vulnerabilities. Reasonable coverage.</td>
+        <td class="developing">Limited review. Covers obvious items only. Major areas overlooked.</td>
+        <td class="incomplete">Superficial review. Most areas not examined.</td>
+    </tr>
+    <tr>
+        <td><strong>Risk Assessment</strong><br><span class="tier2">Problem Solving</span></td>
+        <td class="weight">25%</td>
+        <td class="excellent">Clearly identifies risks with realistic severity assessment. Distinguishes between theoretical and practical risks. Prioritizes appropriately.</td>
+        <td class="proficient">Identifies main risks with reasonable severity assessment. Some prioritization.</td>
+        <td class="developing">Risks identified but severity assessment unrealistic (over- or under-stated). Poor prioritization.</td>
+        <td class="incomplete">Few risks identified. No meaningful assessment of severity.</td>
+    </tr>
+    <tr>
+        <td><strong>Actions Taken</strong><br><span class="tier2">Problem Solving</span></td>
+        <td class="weight">30%</td>
+        <td class="excellent">Implements meaningful changes with evidence (screenshots, before/after). Actions address identified risks. Explains reasoning for choices made.</td>
+        <td class="proficient">Implements several changes with some evidence. Most actions relate to identified risks.</td>
+        <td class="developing">Minimal changes implemented. Limited evidence. Unclear connection to identified risks.</td>
+        <td class="incomplete">No meaningful changes implemented or documented.</td>
+    </tr>
+    <tr>
+        <td><strong>Documentation</strong><br><span class="tier2">Communication</span></td>
+        <td class="weight">20%</td>
+        <td class="excellent">Clear, organized presentation. Would enable someone else to conduct similar audit. Professional quality.</td>
+        <td class="proficient">Generally clear documentation. Most steps could be followed.</td>
+        <td class="developing">Documentation unclear or incomplete. Difficult to follow process.</td>
+        <td class="incomplete">Little documentation. Process cannot be understood.</td>
+    </tr>
+</table>
+
+<h2>Learning Portfolio (20%)</h2>
+
+<p>Curated collection of artifacts demonstrating each Tier II outcome, with reflections.</p>
+
+<div class="note">
+    <strong>Tier II Outcomes Assessed:</strong> All six outcomes through artifacts; Communication through document quality
+</div>
+
+<h3>Checkpoints 1-2 (During Semester)</h3>
+<p>Graded Pass/Incomplete based on:</p>
+<ul>
+    <li>Submitted on time</li>
+    <li>Required structure present</li>
+    <li>Expected progress demonstrated</li>
+</ul>
+
+<h3>Final Portfolio (Checkpoint 3)</h3>
+
+<table>
+    <tr>
+        <th>Criterion</th>
+        <th class="weight">Weight</th>
+        <th class="excellent">Excellent</th>
+        <th class="proficient">Proficient</th>
+        <th class="developing">Developing</th>
+        <th class="incomplete">Incomplete</th>
+    </tr>
+    <tr>
+        <td><strong>Artifact Selection</strong><br><span class="tier2">All outcomes</span></td>
+        <td class="weight">30%</td>
+        <td class="excellent">Six artifacts clearly demonstrate claimed outcomes. Strong choices that show range of skills. Artifacts are substantial work.</td>
+        <td class="proficient">Six artifacts present. Most demonstrate claimed outcomes clearly. Reasonable choices.</td>
+        <td class="developing">Artifacts present but some don't clearly demonstrate claimed outcomes. Weak choices.</td>
+        <td class="incomplete">Missing artifacts or major mismatch between artifacts and claimed outcomes.</td>
+    </tr>
+    <tr>
+        <td><strong>Reflections</strong><br><span class="tier2">Communication</span></td>
+        <td class="weight">25%</td>
+        <td class="excellent">Specific, honest self-assessment. Identifies concrete improvements. Shows genuine learning, not generic praise.</td>
+        <td class="proficient">Reasonable reflections with some specificity. Shows thought about learning process.</td>
+        <td class="developing">Vague reflections. Generic statements. Limited evidence of genuine self-assessment.</td>
+        <td class="incomplete">Reflections missing or purely descriptive. No self-assessment.</td>
+    </tr>
+    <tr>
+        <td><strong>Synthesis</strong><br><span class="tier2">Problem Solving</span></td>
+        <td class="weight">20%</td>
+        <td class="excellent">Demonstrates clear growth. Articulates evaluation approach that could apply to novel tools. Thoughtful integration of course concepts.</td>
+        <td class="proficient">Shows some growth. Can describe evaluation approach. Reasonable integration.</td>
+        <td class="developing">Limited evidence of growth. Evaluation approach vague. Concepts not well integrated.</td>
+        <td class="incomplete">No synthesis or growth demonstrated. Cannot articulate approach.</td>
+    </tr>
+    <tr>
+        <td><strong>Document Quality</strong><br><span class="tier2">Communication</span></td>
+        <td class="weight">25%</td>
+        <td class="excellent">Professional formatting. Working TOC and table of figures. Consistent styles throughout. Polished presentation.</td>
+        <td class="proficient">Good formatting. TOC works. Generally consistent. Minor issues.</td>
+        <td class="developing">Inconsistent formatting. TOC issues. Document looks unfinished.</td>
+        <td class="incomplete">Major formatting problems. TOC broken or missing. Document structure unclear.</td>
+    </tr>
+</table>
+
+<h2>Tool Adaptability Exercise (30%)</h2>
+
+<p>Evaluate a novel AI tool under time pressure, demonstrating integrated mastery of all course skills.</p>
+
+<div class="note">
+    <strong>Tier II Outcomes Assessed:</strong> All six outcomes (integrated capstone)
+</div>
+
+<table>
+    <tr>
+        <th>Criterion</th>
+        <th class="weight">Weight</th>
+        <th class="excellent">Excellent</th>
+        <th class="proficient">Proficient</th>
+        <th class="developing">Developing</th>
+        <th class="incomplete">Incomplete</th>
+    </tr>
+    <tr>
+        <td><strong>Tool Understanding</strong><br><span class="tier2">Content Knowledge</span></td>
+        <td class="weight">15%</td>
+        <td class="excellent">Quickly identifies model type and architecture. Accurate understanding of capabilities based on design.</td>
+        <td class="proficient">Correctly identifies model type. Reasonable understanding of capabilities.</td>
+        <td class="developing">Model type identified with errors. Limited understanding of implications.</td>
+        <td class="incomplete">Cannot identify or significantly misunderstands tool type.</td>
+    </tr>
+    <tr>
+        <td><strong>Framework Application</strong><br><span class="tier2">Problem Solving</span></td>
+        <td class="weight">25%</td>
+        <td class="excellent">All framework components applied efficiently. Prioritizes appropriately given time constraints. Findings are specific and actionable.</td>
+        <td class="proficient">Most framework components addressed. Reasonable prioritization. Most findings specific.</td>
+        <td class="developing">Framework partially applied. Some components superficial. Generic findings.</td>
+        <td class="incomplete">Framework not meaningfully applied. Missing major components.</td>
+    </tr>
+    <tr>
+        <td><strong>Evidence & Testing</strong><br><span class="tier2">Scientific Practices</span></td>
+        <td class="weight">20%</td>
+        <td class="excellent">Tests tool systematically. Documents methodology clearly. Evidence supports conclusions. Acknowledges limitations of testing.</td>
+        <td class="proficient">Some testing conducted with documentation. Evidence generally supports conclusions.</td>
+        <td class="developing">Limited testing. Poor documentation. Conclusions exceed evidence.</td>
+        <td class="incomplete">No meaningful testing. Conclusions unsupported.</td>
+    </tr>
+    <tr>
+        <td><strong>Visualization Evaluation</strong><br><span class="tier2">Graphs & Visualization</span></td>
+        <td class="weight">15%</td>
+        <td class="excellent">If applicable: Critically evaluates any visualizations or benchmark claims. Identifies specific issues with evidence.</td>
+        <td class="proficient">Reasonable evaluation of visualizations/claims. Some issues identified.</td>
+        <td class="developing">Superficial evaluation. Accepts claims without scrutiny.</td>
+        <td class="incomplete">Ignores or misinterprets visual/benchmark information.</td>
+    </tr>
+    <tr>
+        <td><strong>Source Evaluation</strong><br><span class="tier2">Source Evaluation</span></td>
+        <td class="weight">10%</td>
+        <td class="excellent">Efficiently finds and evaluates relevant sources. Distinguishes marketing from evidence. Notes information gaps.</td>
+        <td class="proficient">Uses reasonable sources. Some critical evaluation.</td>
+        <td class="developing">Limited sources. Insufficient critical evaluation.</td>
+        <td class="incomplete">No sources or accepts marketing uncritically.</td>
+    </tr>
+    <tr>
+        <td><strong>Communication</strong><br><span class="tier2">Communication</span></td>
+        <td class="weight">15%</td>
+        <td class="excellent">Clear, organized presentation under time pressure. Key findings highlighted. Appropriate for audience.</td>
+        <td class="proficient">Generally clear. Organization adequate. Most key points present.</td>
+        <td class="developing">Unclear organization. Key points buried. Hard to follow.</td>
+        <td class="incomplete">Disorganized. Cannot determine main findings.</td>
+    </tr>
+</table>
+
+<hr>
+
+<h2>Weekly Activities (Spot-Checked)</h2>
+
+<p>Weekly activities contribute to the Portfolio grade and are spot-checked for completion. Not individually graded in detail, but should meet these standards:</p>
+
+<table>
+    <tr>
+        <th>Standard</th>
+        <th>Meets Standard</th>
+        <th>Does Not Meet Standard</th>
+    </tr>
+    <tr>
+        <td>Completeness</td>
+        <td>All required sections addressed</td>
+        <td>Sections missing or clearly skipped</td>
+    </tr>
+    <tr>
+        <td>Effort</td>
+        <td>Genuine engagement with the activity</td>
+        <td>Minimal effort, placeholder responses</td>
+    </tr>
+    <tr>
+        <td>Timeliness</td>
+        <td>Submitted by deadline</td>
+        <td>Late or missing</td>
+    </tr>
+</table>
+
+<div class="note">
+    <p><strong>Purpose of spot-checking:</strong> To catch students falling behind early and provide feedback, not to grade every detail. Quality of weekly work is ultimately assessed through the portfolio.</p>
+</div>
+
+</body>
+</html>
