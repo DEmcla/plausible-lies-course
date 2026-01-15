@@ -1,6 +1,6 @@
-# CSCI 247: Confidently Uncertain
+# CSCI 247: Confident Uncertainty
 
-**Evaluating AI and the Tools That Shape What We Know**
+**Thinking in the Age of AI**
 
 A course teaching students to critically evaluate AI and digital tools—not build them. No prerequisites, no coding required. Open to all majors. Fulfills Tier II Science & Technology requirement.
 
