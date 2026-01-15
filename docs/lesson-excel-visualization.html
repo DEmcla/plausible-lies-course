@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCI 247: Data to Visualization with Excel</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #1a5276;
+            border-bottom: 3px solid #1a5276;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2874a6;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #1a5276;
+            margin-top: 20px;
+        }
+        .intro {
+            background-color: #f8f9fa;
+            border-left: 4px solid #2874a6;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .note {
+            background-color: #fff9e6;
+            border-left: 4px solid #f0ad4e;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .important {
+            background-color: #fce4e4;
+            border-left: 4px solid #c0392b;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .exercise {
+            background-color: #e8f4f8;
+            border-left: 4px solid #5bc0de;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .key-point {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #2874a6;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        ul, ol {
+            margin: 10px 0;
+        }
+        li {
+            margin: 8px 0;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Data to Visualization with Excel</h1>
+
+<p style="color: #666; font-size: 0.9em;"><em>Document version: 1.0 | Last updated: January 2026</em></p>
+
+<div class="intro">
+    <p><strong>Purpose:</strong> This lesson teaches you to create charts in Excel—not just mechanically, but with an understanding of how visualization choices shape interpretation. The same data can tell very different stories depending on how you chart it.</p>
+    <p><strong>Time:</strong> 45-60 minutes</p>
+    <p><strong>Software:</strong> Microsoft Excel (desktop version)</p>
+</div>
+
+<h2>Why This Matters</h2>
+
+<p>When AI tools generate charts, they make choices: chart type, axis ranges, colors, labels. These choices aren't neutral—they emphasize some patterns and hide others. To evaluate AI-generated visualizations, you need to understand what choices were made and what alternatives existed.</p>
+
+<p>Building charts yourself gives you that understanding. You'll see firsthand how the same numbers become different stories.</p>
+
+<h2>Part 1: The Data</h2>
+
+<p>We'll use a simple dataset: quarterly sales for two products over one year.</p>
+
+<table>
+    <tr>
+        <th>Quarter</th>
+        <th>Product A</th>
+        <th>Product B</th>
+    </tr>
+    <tr>
+        <td>Q1</td>
+        <td>$120,000</td>
+        <td>$95,000</td>
+    </tr>
+    <tr>
+        <td>Q2</td>
+        <td>$125,000</td>
+        <td>$102,000</td>
+    </tr>
+    <tr>
+        <td>Q3</td>
+        <td>$118,000</td>
+        <td>$108,000</td>
+    </tr>
+    <tr>
+        <td>Q4</td>
+        <td>$130,000</td>
+        <td>$115,000</td>
+    </tr>
+</table>
+
+<div class="exercise">
+    <strong>Setup:</strong>
+    <ol>
+        <li>Open Excel and create a new workbook</li>
+        <li>Enter the data above starting in cell A1</li>
+        <li>Format the numbers as currency (select cells, right-click, Format Cells, Currency)</li>
+    </ol>
+</div>
+
+<h2>Part 2: Basic Chart Creation</h2>
+
+<h3>Creating a Column Chart</h3>
+
+<ol>
+    <li>Select all your data (A1 through C5, including headers)</li>
+    <li>Go to <strong>Insert</strong> tab → <strong>Charts</strong> group → <strong>Column Chart</strong></li>
+    <li>Choose "Clustered Column"</li>
+</ol>
+
+<p>You now have a basic chart comparing both products across quarters.</p>
+
+<div class="key-point">
+    <strong>What Excel did automatically:</strong>
+    <ul>
+        <li>Set the Y-axis to start at $0</li>
+        <li>Chose axis increments</li>
+        <li>Added a legend</li>
+        <li>Applied default colors</li>
+    </ul>
+    <p>Each of these is a choice that affects how the data is perceived.</p>
+</div>
+
+<h2>Part 3: How Choices Change the Story</h2>
+
+<h3>Experiment 1: Changing the Y-Axis</h3>
+
+<p>Right-click on the Y-axis → <strong>Format Axis</strong>. Under "Axis Options," find "Bounds."</p>
+
+<div class="exercise">
+    <strong>Try this:</strong>
+    <ol>
+        <li>Set Minimum to <code>0</code> (default) — What story does this tell?</li>
+        <li>Set Minimum to <code>90000</code> — How does the story change?</li>
+        <li>Set Minimum to <code>115000</code> — Now what do you see?</li>
+    </ol>
+</div>
+
+<div class="important">
+    <p><strong>Key insight:</strong> The same data, with different Y-axis starting points, tells completely different stories:</p>
+    <ul>
+        <li><strong>Starting at $0:</strong> Both products show modest, similar performance</li>
+        <li><strong>Starting at $90,000:</strong> Differences between products appear larger</li>
+        <li><strong>Starting at $115,000:</strong> Product A's Q3 dip looks like a crisis; Product B appears to barely exist in Q1</li>
+    </ul>
+    <p>None of these charts are "lying"—the numbers are accurate. But each emphasizes different aspects of the data.</p>
+</div>
+
+<h3>Experiment 2: Changing Chart Type</h3>
+
+<p>With your chart selected, go to <strong>Chart Design</strong> tab → <strong>Change Chart Type</strong>.</p>
+
+<div class="exercise">
+    <strong>Try these chart types with your data:</strong>
+    <ol>
+        <li><strong>Line chart</strong> — Emphasizes trends over time</li>
+        <li><strong>Stacked column</strong> — Emphasizes total combined sales</li>
+        <li><strong>100% stacked column</strong> — Shows market share (relative proportions)</li>
+        <li><strong>Pie chart</strong> (select just one quarter) — Shows proportion at one moment</li>
+    </ol>
+    <p>For each: What question does this chart type best answer? What does it hide?</p>
+</div>
+
+<table>
+    <tr>
+        <th>Chart Type</th>
+        <th>Best For</th>
+        <th>Can Hide</th>
+    </tr>
+    <tr>
+        <td>Column/Bar</td>
+        <td>Comparing values across categories</td>
+        <td>Trends over time (if not ordered)</td>
+    </tr>
+    <tr>
+        <td>Line</td>
+        <td>Showing trends and changes over time</td>
+        <td>Absolute values (focus is on direction)</td>
+    </tr>
+    <tr>
+        <td>Stacked</td>
+        <td>Showing parts of a whole over time</td>
+        <td>Individual category performance</td>
+    </tr>
+    <tr>
+        <td>Pie</td>
+        <td>Proportions at a single point in time</td>
+        <td>Everything else (trends, comparisons)</td>
+    </tr>
+</table>
+
+<h3>Experiment 3: Color and Emphasis</h3>
+
+<p>Click on any data series (the bars for one product) → <strong>Format Data Series</strong> → <strong>Fill</strong>.</p>
+
+<div class="exercise">
+    <strong>Try this:</strong>
+    <ol>
+        <li>Make Product A bright red and Product B gray</li>
+        <li>Now reverse: Product A gray, Product B bright green</li>
+    </ol>
+    <p>Which product does your eye go to first in each version?</p>
+</div>
+
+<div class="note">
+    <p><strong>Color isn't neutral.</strong> Bright colors draw attention. Red often implies "bad" or "warning." Green implies "good" or "growth." Gray recedes into the background. These associations affect how viewers interpret your chart—even if the data hasn't changed.</p>
+</div>
+
+<h2>Part 4: The "Make It Lie" Challenge</h2>
+
+<p>Now you'll create two charts from the same data that support opposite conclusions.</p>
+
+<div class="exercise">
+    <strong>Challenge:</strong>
+    <p>Using only the sales data above, create:</p>
+    <ol>
+        <li><strong>Chart A:</strong> Makes Product A look like the clear winner, dominant and successful</li>
+        <li><strong>Chart B:</strong> Makes Product B look like the rising star, the better investment</li>
+    </ol>
+    <p>You may NOT change the numbers. You may only change:</p>
+    <ul>
+        <li>Chart type</li>
+        <li>Axis ranges</li>
+        <li>Which data to include/exclude</li>
+        <li>Colors and emphasis</li>
+        <li>Titles and labels</li>
+    </ul>
+</div>
+
+<h3>Hints for Chart A (Product A wins)</h3>
+<ul>
+    <li>Use total annual sales (Product A: $493,000 vs Product B: $420,000)</li>
+    <li>Start Y-axis at $0 to show the absolute gap</li>
+    <li>Use a simple bar chart comparing totals</li>
+    <li>Title: "Annual Sales Performance"</li>
+</ul>
+
+<h3>Hints for Chart B (Product B wins)</h3>
+<ul>
+    <li>Focus on growth rate, not absolute numbers</li>
+    <li>Product A grew 8.3% from Q1 to Q4; Product B grew 21%</li>
+    <li>Use a line chart showing the trajectory</li>
+    <li>Start Y-axis at $90,000 to emphasize the closing gap</li>
+    <li>Title: "Quarterly Growth Trends"</li>
+</ul>
+
+<div class="key-point">
+    <p><strong>The lesson:</strong> Neither chart lies about the numbers. Both are "accurate." But they answer different questions and lead viewers to different conclusions. When you evaluate AI-generated charts—or any charts—ask: What question is this chart answering? What choices were made? What alternative stories could this data tell?</p>
+</div>
+
+<h2>Part 5: Connecting to AI Evaluation</h2>
+
+<p>When AI tools generate visualizations, they make all these same choices—often without telling you:</p>
+
+<ul>
+    <li>What chart type to use</li>
+    <li>Where to start the axes</li>
+    <li>What to emphasize with color</li>
+    <li>What data to include or exclude</li>
+    <li>How to title and label</li>
+</ul>
+
+<p>Now that you've made these choices yourself, you can spot them in AI output. Questions to ask:</p>
+
+<ol>
+    <li>Why did the AI choose this chart type? Would another type tell a different story?</li>
+    <li>Where does the Y-axis start? Would starting at zero change the impression?</li>
+    <li>What's being emphasized? What's being downplayed?</li>
+    <li>Is anything left out of this visualization?</li>
+    <li>What question is this chart best at answering? Is that the question I asked?</li>
+</ol>
+
+<h2>Deliverable</h2>
+
+<p>For the course activity, you'll submit:</p>
+
+<ol>
+    <li>Your two "Make It Lie" charts (as images or in a Word document)</li>
+    <li>A brief explanation (one paragraph each) of what choices you made to support each narrative</li>
+    <li>A reflection: What did this exercise teach you about evaluating visualizations?</li>
+</ol>
+
+<h2>Excel Skills Reference</h2>
+
+<p>Quick reference for chart operations:</p>
+
+<table>
+    <tr>
+        <th>Task</th>
+        <th>How</th>
+    </tr>
+    <tr>
+        <td>Create chart</td>
+        <td>Select data → Insert → Charts → Choose type</td>
+    </tr>
+    <tr>
+        <td>Change chart type</td>
+        <td>Select chart → Chart Design → Change Chart Type</td>
+    </tr>
+    <tr>
+        <td>Edit axis</td>
+        <td>Right-click axis → Format Axis</td>
+    </tr>
+    <tr>
+        <td>Change colors</td>
+        <td>Click data series → Format → Fill</td>
+    </tr>
+    <tr>
+        <td>Add title</td>
+        <td>Chart Design → Add Chart Element → Chart Title</td>
+    </tr>
+    <tr>
+        <td>Add data labels</td>
+        <td>Chart Design → Add Chart Element → Data Labels</td>
+    </tr>
+    <tr>
+        <td>Move chart</td>
+        <td>Click and drag, or Chart Design → Move Chart</td>
+    </tr>
+</table>
+
+</body>
+</html>
