@@ -65,7 +65,7 @@ Revamp CSCI 247: Confident Uncertainty (originally "Plausible Lies", then "Confi
 | Assessment | Weight | Tier II Outcomes Addressed |
 |------------|--------|---------------------------|
 | AI Tool Audit | 25% | Content Knowledge, Problem Solving, Source Evaluation |
-| Personal Security Audit | 25% | Problem Solving, Communication |
+| AI Privacy & Security Audit | 25% | Problem Solving, Communication |
 | Participation/Weekly Work | 20% | Scientific Practices, Graphs & Visualization |
 | Tool Adaptability Exercise | 30% | All six (integrated capstone) |
 
@@ -74,7 +74,7 @@ Revamp CSCI 247: Confident Uncertainty (originally "Plausible Lies", then "Confi
 - **AI Tool Audit**: Add section requiring students to explain what type of model the tool uses and why that matters for evaluation
 - **Weekly Work**: Include 2-3 structured comparison exercises (same prompt across models) and at least one AI-generated graph critique
 - **Tool Adaptability Exercise**: Ensure novel tool includes visualization component students must evaluate
-- **Personal Security Audit**: No changes needed
+- **AI Privacy & Security Audit**: Refocused from general digital security to AI-specific privacy evaluation using the course framework
 
 ## What's Preserved
 

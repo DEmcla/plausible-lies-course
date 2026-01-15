@@ -116,7 +116,7 @@ Accelerated asynchronous online version for summer sessions. Fully redesigned fo
 | Assessment | Weight | Tier II Outcomes |
 |------------|--------|------------------|
 | AI Tool Audit | 25% | Content Knowledge, Problem Solving, Source Evaluation |
-| Personal Security Audit | 25% | Problem Solving, Communication |
+| AI Privacy & Security Audit | 25% | Problem Solving, Source Evaluation, Communication |
 | Participation/Weekly Work | 20% | Scientific Practices, Graphs & Visualization |
 | Tool Adaptability Exercise | 30% | All (integrated capstone) |
 
@@ -139,8 +139,8 @@ Accelerated asynchronous online version for summer sessions. Fully redesigned fo
 While evaluation is the focus, students also build:
 
 - Word: Styles, track changes, accessibility, templates
-- Excel: Data organization, formulas, failure modes (optional in online version)
-- Security: Password managers, MFA, privacy settings
+- Excel: Data organization, formulas, chart interpretation (optional in online version)
+- AI Privacy: Understanding terms of service, managing data sharing, making informed trade-offs
 - Collaboration: Async communication, file management, version control
 
 ---
