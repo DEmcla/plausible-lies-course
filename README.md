@@ -2,7 +2,7 @@
 
 **Evaluating AI and the Tools That Shape What We Know**
 
-A course teaching students to critically evaluate AI and digital tools—not build them. No prerequisites, no coding required. Open to all majors.
+A course teaching students to critically evaluate AI and digital tools—not build them. No prerequisites, no coding required. Open to all majors. Fulfills Tier II Science & Technology requirement.
 
 ---
 
@@ -18,6 +18,62 @@ Students graduate without knowing how to evaluate the tools they'll use for the 
 - **Broader Impact**: What happens at scale? Who benefits? Who's harmed?
 
 The framework predates AI and will outlast current tools. AI is just our test case.
+
+---
+
+## Tier II Science & Technology Alignment
+
+This course fulfills MCLA's Tier II Science & Technology requirement. Each learning outcome maps directly to a Tier II outcome:
+
+| Learning Outcome | Tier II Outcome |
+|------------------|-----------------|
+| Explain how different AI models work and select appropriate tools for specific tasks | Content Knowledge |
+| Apply a systematic evaluation framework to assess any technology's claims, limitations, and trade-offs | Problem Solving |
+| Communicate findings through professional documents, structured reports, and clear presentations | Communication |
+| Interpret and critique data visualizations, including AI-generated graphs, for statistical validity and misleading representations | Graphs & Visualization |
+| Design and conduct controlled comparisons of AI tools, documenting methodology and drawing evidence-based conclusions | Scientific Practices |
+| Evaluate source reliability across AI outputs, training data claims, and technical documentation | Source Evaluation |
+
+---
+
+## Learning Outcomes
+
+Students completing this course will be able to:
+
+1. Explain how different AI models work and select appropriate tools for specific tasks
+2. Apply a systematic evaluation framework to assess any technology's claims, limitations, and trade-offs
+3. Communicate findings through professional documents, structured reports, and clear presentations
+4. Interpret and critique data visualizations, including AI-generated graphs, for statistical validity and misleading representations
+5. Design and conduct controlled comparisons of AI tools, documenting methodology and drawing evidence-based conclusions
+6. Evaluate source reliability across AI outputs, training data claims, and technical documentation
+
+---
+
+## Course Content
+
+### Unit 1: Foundations (Weeks 1-3)
+- What is AI? Types of models: LLMs, image generators, classifiers, recommendation systems
+- How training works (conceptually): data in, patterns out, no understanding
+- The evaluation framework introduction: Function, Data, Failures, Access, Terms, Impact
+
+### Unit 2: Testing Claims (Weeks 4-6)
+- Designing controlled comparisons: same prompt, multiple models
+- Documenting methodology: what you did, what you found, what it means
+- Reproducibility: why "it worked for me" isn't evidence
+
+### Unit 3: Visualizations & Data (Weeks 7-9)
+- How AI generates graphs and charts
+- Spotting BS: misleading axes, cherry-picked data, statistical insignificance
+- Evaluating published benchmarks and performance claims
+
+### Unit 4: Communication & Synthesis (Weeks 10-12)
+- Professional documentation: structuring findings, writing for audiences
+- Practical tools: Word styles, accessibility, version control
+- Presenting technical evaluations to non-technical audiences
+
+### Unit 5: Application (Weeks 13-14)
+- Tool Adaptability Exercise (final assessment)
+- Framework applied to novel/emerging tools
 
 ---
 
@@ -39,6 +95,7 @@ Accelerated asynchronous online version for summer sessions. Fully redesigned fo
 
 ### Supporting Documents
 - `docs/CSCI247_Plausible_Lies_Curriculum_Brief.docx` — One-page overview for curriculum committees
+- `docs/plans/2026-01-15-tier2-alignment-design.md` — Tier II alignment design document
 
 ---
 
@@ -56,25 +113,12 @@ Accelerated asynchronous online version for summer sessions. Fully redesigned fo
 
 ## Assessments
 
-| Assessment | Weight | Description |
-|------------|--------|-------------|
-| AI Tool Audit | 25% | Evaluate an unfamiliar AI tool using the framework |
-| Personal Security Audit | 25% | Audit digital footprint; implement real changes |
-| Participation/Weekly Work | 20% | In-class activities or online discussions |
-| Tool Adaptability Exercise | 30% | Apply framework to novel tool under time pressure |
-
----
-
-## Learning Outcomes
-
-Students completing this course will be able to:
-
-1. Systematically evaluate any technology using a transferable framework
-2. Identify how computational systems fail and assess severity in context
-3. Make informed decisions about privacy, security, and data trade-offs
-4. Create professional documents and organize data effectively
-5. Navigate professional and academic integrity questions involving AI
-6. Adapt to new tools independently, without waiting for instruction
+| Assessment | Weight | Tier II Outcomes |
+|------------|--------|------------------|
+| AI Tool Audit | 25% | Content Knowledge, Problem Solving, Source Evaluation |
+| Personal Security Audit | 25% | Problem Solving, Communication |
+| Participation/Weekly Work | 20% | Scientific Practices, Graphs & Visualization |
+| Tool Adaptability Exercise | 30% | All (integrated capstone) |
 
 ---
 
