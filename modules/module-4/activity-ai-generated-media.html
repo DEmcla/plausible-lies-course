@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity: AI-Generated Media & Deepfakes</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #1a5276;
+            border-bottom: 3px solid #1a5276;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2874a6;
+            margin-top: 25px;
+        }
+        h3 {
+            color: #1a5276;
+            margin-top: 20px;
+        }
+        .intro {
+            background-color: #f8f9fa;
+            border-left: 4px solid #2874a6;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .concept {
+            background-color: #e8f4f8;
+            border: 1px solid #5bc0de;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .concept h3 {
+            margin-top: 0;
+            color: #2874a6;
+        }
+        .exercise {
+            background-color: #fff9e6;
+            border-left: 4px solid #f0ad4e;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .warning {
+            background-color: #fce4e4;
+            border-left: 4px solid #c0392b;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .ethics {
+            background-color: #f3e5f5;
+            border-left: 4px solid #9c27b0;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .key-insight {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #2874a6;
+            color: white;
+        }
+        ul, ol {
+            margin: 10px 0;
+        }
+        li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>AI-Generated Media & Deepfakes</h1>
+
+<div class="intro">
+    <p><strong>Purpose:</strong> Understand how AI generates images, audio, and video; learn to identify synthetic media; and consider the ethical implications of these technologies.</p>
+    <p><strong>Time:</strong> 60-75 minutes</p>
+</div>
+
+<h2>The New Reality of Synthetic Media</h2>
+
+<p>AI can now generate increasingly convincing:</p>
+<ul>
+    <li><strong>Images:</strong> Photorealistic faces, scenes, artwork (DALL-E, Midjourney, Stable Diffusion)</li>
+    <li><strong>Audio:</strong> Voice cloning, music, sound effects (ElevenLabs, various tools)</li>
+    <li><strong>Video:</strong> Face swaps, lip syncing, full video generation (deepfake tools, Sora, Runway)</li>
+</ul>
+
+<p>This has profound implications for evidence, trust, and verification.</p>
+
+<div class="concept">
+    <h3>How AI Image Generation Works</h3>
+    <p>AI image generators don't "find" images—they create them from scratch based on patterns learned from millions of training images.</p>
+    <ul>
+        <li><strong>Text-to-image:</strong> Describe what you want; AI generates it</li>
+        <li><strong>Image-to-image:</strong> Modify existing images based on prompts</li>
+        <li><strong>Inpainting:</strong> Add or remove elements from existing images</li>
+    </ul>
+    <p>The AI has no concept of "truth"—it generates whatever matches the statistical patterns for your prompt.</p>
+</div>
+
+<div class="concept">
+    <h3>How Deepfakes Work</h3>
+    <p>"Deepfake" typically refers to AI-generated videos that swap faces or manipulate someone's appearance/voice to make them appear to say or do things they never did.</p>
+    <ul>
+        <li><strong>Face swap:</strong> Replace one person's face with another</li>
+        <li><strong>Lip sync:</strong> Make someone appear to speak different words</li>
+        <li><strong>Voice cloning:</strong> Generate speech in someone's voice from text</li>
+        <li><strong>Full synthesis:</strong> Generate entirely fictional video content</li>
+    </ul>
+</div>
+
+<h2>Detection: What to Look For</h2>
+
+<div class="warning">
+    <h3>Important Caveat</h3>
+    <p>Detection is an arms race. Today's tells may not work tomorrow. The goal isn't to become a perfect detector—it's to develop healthy skepticism and verification habits.</p>
+</div>
+
+<h3>Common Artifacts in AI Images</h3>
+<table>
+    <tr>
+        <th>Element</th>
+        <th>What to Check</th>
+    </tr>
+    <tr>
+        <td><strong>Hands & Fingers</strong></td>
+        <td>Wrong number of fingers, impossible positions, melted appearance</td>
+    </tr>
+    <tr>
+        <td><strong>Text</strong></td>
+        <td>Garbled letters, nonsense words, inconsistent fonts</td>
+    </tr>
+    <tr>
+        <td><strong>Backgrounds</strong></td>
+        <td>Objects that blend together, impossible architecture, repeating patterns</td>
+    </tr>
+    <tr>
+        <td><strong>Symmetry</strong></td>
+        <td>Earrings, glasses, or facial features that don't match left/right</td>
+    </tr>
+    <tr>
+        <td><strong>Edges</strong></td>
+        <td>Blurry boundaries between objects, hair that merges with background</td>
+    </tr>
+    <tr>
+        <td><strong>Context</strong></td>
+        <td>Shadows going wrong directions, reflections that don't match</td>
+    </tr>
+</table>
+
+<h3>Common Artifacts in AI Video/Audio</h3>
+<table>
+    <tr>
+        <th>Element</th>
+        <th>What to Check</th>
+    </tr>
+    <tr>
+        <td><strong>Lip sync</strong></td>
+        <td>Mouth movements slightly off from audio</td>
+    </tr>
+    <tr>
+        <td><strong>Blinking</strong></td>
+        <td>Unnatural blink patterns (too little or too regular)</td>
+    </tr>
+    <tr>
+        <td><strong>Skin texture</strong></td>
+        <td>Too smooth, inconsistent between frames</td>
+    </tr>
+    <tr>
+        <td><strong>Voice</strong></td>
+        <td>Unusual cadence, lack of breathing sounds, consistent volume</td>
+    </tr>
+    <tr>
+        <td><strong>Lighting</strong></td>
+        <td>Inconsistent shadows frame-to-frame</td>
+    </tr>
+</table>
+
+<div class="exercise">
+    <h3>Exercise 1: Image Analysis</h3>
+    <p>Search for "AI generated images" or "Midjourney examples" and find 3 AI-generated images.</p>
+    <p>For each image, document:</p>
+    <ol>
+        <li>What artifacts can you identify? (hands, text, edges, etc.)</li>
+        <li>What made you suspicious it was AI-generated?</li>
+        <li>If you saw this without context, would you have known?</li>
+    </ol>
+</div>
+
+<div class="exercise">
+    <h3>Exercise 2: Real vs Generated</h3>
+    <p>Visit a "real or fake" detector site (search "which face is real" or "AI or not").</p>
+    <p>Test yourself on 10 examples. Record:</p>
+    <ul>
+        <li>Your accuracy rate</li>
+        <li>What cues helped you identify fakes?</li>
+        <li>What fooled you?</li>
+    </ul>
+</div>
+
+<h2>Ethical Dimensions</h2>
+
+<div class="ethics">
+    <h3>The Harm Landscape</h3>
+    <p>AI-generated media creates real harms:</p>
+    <ul>
+        <li><strong>Non-consensual imagery:</strong> Creating fake intimate images of real people</li>
+        <li><strong>Fraud:</strong> Voice cloning for phone scams targeting families</li>
+        <li><strong>Disinformation:</strong> Fake videos of politicians or events</li>
+        <li><strong>Evidence manipulation:</strong> Undermining trust in legitimate recordings</li>
+        <li><strong>Harassment:</strong> Creating fake content to damage reputations</li>
+    </ul>
+</div>
+
+<div class="ethics">
+    <h3>The "Liar's Dividend"</h3>
+    <p>A particularly insidious effect: As synthetic media becomes common, people can dismiss <em>real</em> evidence as fake. This benefits bad actors—they can claim authentic recordings are AI-generated.</p>
+</div>
+
+<div class="exercise">
+    <h3>Exercise 3: Ethics Case Analysis</h3>
+    <p>Consider one of these scenarios:</p>
+    <ol>
+        <li>A news organization receives video of a politician saying something controversial. How should they verify it before publishing?</li>
+        <li>An artist uses AI to generate images "in the style of" a famous living artist. Is this ethical? Legal?</li>
+        <li>A company uses AI voice cloning to have a deceased celebrity "endorse" their product. What are the implications?</li>
+    </ol>
+    <p>Write 200-300 words analyzing the ethical issues and what policies or practices might address them.</p>
+</div>
+
+<div class="key-insight">
+    <h3>Key Takeaways</h3>
+    <ul>
+        <li><strong>Verification is essential:</strong> Visual evidence can no longer be trusted at face value</li>
+        <li><strong>Context matters:</strong> Where did this media come from? Who benefits from it being believed?</li>
+        <li><strong>Detection is temporary:</strong> AI improves faster than detection methods</li>
+        <li><strong>The real defense is process:</strong> Verify sources, corroborate claims, maintain healthy skepticism</li>
+    </ul>
+</div>
+
+<h2>Submission</h2>
+
+<p>Submit a document containing:</p>
+<ol>
+    <li><strong>Image Analysis:</strong> Your analysis of 3 AI-generated images with identified artifacts</li>
+    <li><strong>Detection Results:</strong> Your accuracy on the real/fake test and what you learned</li>
+    <li><strong>Ethics Analysis:</strong> Your 200-300 word response to one of the ethics scenarios</li>
+    <li><strong>Reflection (100-150 words):</strong> How has this changed how you'll evaluate images and video you encounter online?</li>
+</ol>
+
+</body>
+</html>

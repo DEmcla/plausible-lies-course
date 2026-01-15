@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity: How AI Actually Works</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #1a5276;
+            border-bottom: 3px solid #1a5276;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2874a6;
+            margin-top: 25px;
+        }
+        h3 {
+            color: #1a5276;
+            margin-top: 20px;
+        }
+        .intro {
+            background-color: #f8f9fa;
+            border-left: 4px solid #2874a6;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .concept {
+            background-color: #e8f4f8;
+            border: 1px solid #5bc0de;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .concept h3 {
+            margin-top: 0;
+            color: #2874a6;
+        }
+        .exercise {
+            background-color: #fff9e6;
+            border-left: 4px solid #f0ad4e;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .key-insight {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .warning {
+            background-color: #fce4e4;
+            border-left: 4px solid #c0392b;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        ul, ol {
+            margin: 10px 0;
+        }
+        li {
+            margin: 8px 0;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+<h1>How AI Actually Works</h1>
+
+<div class="intro">
+    <p><strong>Purpose:</strong> Understand the core mechanics of how AI language models work—not to become a technical expert, but to develop accurate mental models that help you evaluate AI tools critically.</p>
+    <p><strong>Time:</strong> 45-60 minutes</p>
+</div>
+
+<h2>Why This Matters</h2>
+
+<p>Most people have inaccurate mental models of how AI works. They imagine something like a search engine (looking up answers) or a conscious entity (thinking and reasoning). Neither is correct. Understanding the actual mechanism—statistical prediction—helps you:</p>
+
+<ul>
+    <li>Predict when AI will fail</li>
+    <li>Understand why AI "hallucinates"</li>
+    <li>Evaluate AI claims more accurately</li>
+    <li>Use AI tools more effectively</li>
+</ul>
+
+<h2>Core Concepts</h2>
+
+<div class="concept">
+    <h3>Concept 1: Word Prediction</h3>
+    <p>Large Language Models (LLMs) like ChatGPT, Claude, and Gemini are fundamentally <strong>word prediction machines</strong>. Given a sequence of words, they predict what word is most likely to come next.</p>
+
+    <p><strong>Example:</strong> Given "The cat sat on the ___", the model predicts words like "mat" (high probability), "floor" (medium), "refrigerator" (low).</p>
+
+    <p>This happens billions of times to generate a response. Each word is chosen based on statistical patterns learned from training data—not from "understanding" or "thinking."</p>
+</div>
+
+<div class="exercise">
+    <h3>Exercise 1: The Prediction Game</h3>
+    <p>Try this with a partner or on your own:</p>
+    <ol>
+        <li>Start a sentence: "The best way to learn a new language is to..."</li>
+        <li>Predict the next 3-5 words that would most likely follow</li>
+        <li>Now ask an AI to complete the same sentence</li>
+        <li>Compare: Did the AI choose statistically common completions?</li>
+    </ol>
+    <p><strong>Reflection:</strong> The AI isn't choosing the "correct" answer—it's choosing the <em>statistically likely</em> answer based on patterns in its training data.</p>
+</div>
+
+<div class="concept">
+    <h3>Concept 2: Training Data = Patterns Learned</h3>
+    <p>AI models learn patterns from massive amounts of text (books, websites, articles, code). The model doesn't "know" facts—it has learned statistical associations between words and concepts.</p>
+
+    <p><strong>Implications:</strong></p>
+    <ul>
+        <li>If something appears frequently in training data, the AI will reproduce it confidently</li>
+        <li>If something is rare or absent, the AI may struggle or make things up</li>
+        <li>Biases in training data become biases in AI outputs</li>
+        <li>The AI cannot distinguish between true information and false information that was common in its training data</li>
+    </ul>
+</div>
+
+<div class="concept">
+    <h3>Concept 3: Hallucination</h3>
+    <p>"Hallucination" is when AI generates confident-sounding but false information. This isn't a bug—it's a fundamental feature of how the system works.</p>
+
+    <p><strong>Why it happens:</strong></p>
+    <ul>
+        <li>The model predicts <em>plausible</em> text, not <em>true</em> text</li>
+        <li>It has no mechanism to verify facts against reality</li>
+        <li>It will fill gaps with statistically reasonable (but invented) details</li>
+        <li>Confidence in output has no relationship to accuracy</li>
+    </ul>
+</div>
+
+<div class="warning">
+    <h3>The Confidence Problem</h3>
+    <p>AI models express everything with the same confident tone. They don't say "I'm not sure about this" or "I might be making this up." A completely fabricated citation looks identical to a real one.</p>
+    <p><strong>This is why verification matters.</strong> You cannot tell from the output alone whether it's accurate.</p>
+</div>
+
+<div class="exercise">
+    <h3>Exercise 2: Catching Hallucinations</h3>
+    <p>Ask an AI to provide:</p>
+    <ol>
+        <li>A list of 5 academic papers on a specific topic in your field of interest</li>
+        <li>Include authors, titles, publication years, and journals</li>
+    </ol>
+    <p>Now verify:</p>
+    <ul>
+        <li>Google the paper titles exactly as given</li>
+        <li>Do these papers actually exist?</li>
+        <li>Are the authors, dates, and journals correct?</li>
+    </ul>
+    <p><strong>Document your findings:</strong> How many were real? How many were partially fabricated? How confident did the AI sound?</p>
+</div>
+
+<div class="concept">
+    <h3>Concept 4: No Understanding, Just Patterns</h3>
+    <p>LLMs don't "understand" language the way humans do. They recognize and reproduce patterns. This means:</p>
+    <ul>
+        <li>They can generate grammatically perfect nonsense</li>
+        <li>They can miss obvious logical errors</li>
+        <li>They can contradict themselves without noticing</li>
+        <li>They treat all text patterns equally—true or false, helpful or harmful</li>
+    </ul>
+</div>
+
+<div class="key-insight">
+    <h3>Key Insight: The Right Mental Model</h3>
+    <p><strong>Wrong:</strong> "AI is like a very smart assistant that knows a lot."</p>
+    <p><strong>Wrong:</strong> "AI is like a search engine that finds information."</p>
+    <p><strong>Better:</strong> "AI is a statistical pattern-matching system that predicts plausible-sounding text based on patterns in its training data. It has no knowledge, understanding, or ability to verify truth."</p>
+    <p>This mental model helps you use AI effectively while remaining appropriately skeptical.</p>
+</div>
+
+<h2>Submission</h2>
+
+<p>Complete and submit:</p>
+<ol>
+    <li><strong>Prediction Game results:</strong> What sentence did you test? What did you predict vs. what the AI generated?</li>
+    <li><strong>Hallucination check:</strong> Document your citation verification. How many were real? What did you learn?</li>
+    <li><strong>Mental model reflection (100-200 words):</strong> How has your understanding of how AI works changed? How will this affect how you use AI tools?</li>
+</ol>
+
+</body>
+</html>
