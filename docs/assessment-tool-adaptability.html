@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCI 247: Tool Adaptability Exercise</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #1a5276;
+            border-bottom: 3px solid #1a5276;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2874a6;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #1a5276;
+            margin-top: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #2874a6;
+            color: white;
+        }
+        .overview {
+            background-color: #f8f9fa;
+            border-left: 4px solid #2874a6;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .note {
+            background-color: #fff9e6;
+            border-left: 4px solid #f0ad4e;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .important {
+            background-color: #fce4e4;
+            border-left: 4px solid #c0392b;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .success {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        ul, ol {
+            margin: 10px 0;
+        }
+        li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Tool Adaptability Exercise</h1>
+
+<p style="color: #666; font-size: 0.9em;"><em>Document version: 1.0 | Last updated: January 2026</em></p>
+
+<div class="overview">
+    <p><strong>Weight:</strong> 30% of final grade</p>
+    <p><strong>Due:</strong> End of Week 6 (online) / End of Week 14 (in-person)</p>
+    <p><strong>Format:</strong> Written evaluation, 1500-2500 words</p>
+    <p><strong>Time Limit:</strong> One week from tool reveal</p>
+</div>
+
+<h2>Overview</h2>
+
+<p>This is your capstone assessment. You will evaluate a novel AI tool—one you've never seen before—using everything you've learned in this course. The tool will be revealed at the start of the final week, and you'll have one week to complete your evaluation.</p>
+
+<div class="success">
+    <p><strong>Why this format:</strong> The AI landscape changes constantly. The most valuable skill you can develop is the ability to quickly and systematically evaluate any new tool you encounter. This exercise tests exactly that ability.</p>
+</div>
+
+<h2>How It Works</h2>
+
+<h3>Tool Reveal</h3>
+
+<p>On Monday of Week 6 (online) or Week 14 (in-person), you will receive:</p>
+
+<ul>
+    <li>The name and URL of an AI tool</li>
+    <li>Brief context about what category it falls into</li>
+    <li>Any specific aspects to focus on (may vary by tool)</li>
+</ul>
+
+<p>The tool will be:</p>
+<ul>
+    <li>Free to use (or have a free tier sufficient for evaluation)</li>
+    <li>Not one we've used extensively in class</li>
+    <li>Representative of real AI tools you might encounter professionally</li>
+</ul>
+
+<h3>Your Task</h3>
+
+<p>Apply the evaluation framework to this tool, demonstrating:</p>
+
+<ol>
+    <li><strong>Quick identification</strong> of the model type and how it works</li>
+    <li><strong>Systematic application</strong> of all six framework components</li>
+    <li><strong>Evidence-based testing</strong> with documented methodology</li>
+    <li><strong>Critical evaluation</strong> of claims and marketing</li>
+    <li><strong>Clear communication</strong> of findings and recommendations</li>
+</ol>
+
+<h2>Requirements</h2>
+
+<h3>Framework Application</h3>
+
+<p>Address all six components of the evaluation framework:</p>
+
+<table>
+    <tr>
+        <th>Component</th>
+        <th>What to Address</th>
+    </tr>
+    <tr>
+        <td><strong>Function</strong></td>
+        <td>What does it claim to do? Does it deliver? Under what conditions?</td>
+    </tr>
+    <tr>
+        <td><strong>Data</strong></td>
+        <td>What is it trained on? What does it collect from you?</td>
+    </tr>
+    <tr>
+        <td><strong>Failures</strong></td>
+        <td>Where does it break? How badly? What are the consequences?</td>
+    </tr>
+    <tr>
+        <td><strong>Access</strong></td>
+        <td>Who can use this? What barriers exist? Who is excluded?</td>
+    </tr>
+    <tr>
+        <td><strong>Terms</strong></td>
+        <td>What are you agreeing to? Who owns what? How is data used?</td>
+    </tr>
+    <tr>
+        <td><strong>Broader Impact</strong></td>
+        <td>What happens at scale? Who benefits? Who might be harmed?</td>
+    </tr>
+</table>
+
+<div class="note">
+    <p><strong>Prioritize wisely.</strong> You won't have time for exhaustive analysis of every component. Spend more time on components where you find significant issues or interesting findings.</p>
+</div>
+
+<h3>Testing and Evidence</h3>
+
+<p>Your evaluation must include hands-on testing:</p>
+
+<ul>
+    <li>Document what you tested and how</li>
+    <li>Include specific examples of inputs and outputs</li>
+    <li>Try to find edge cases or failure modes</li>
+    <li>Note what you couldn't test and why</li>
+</ul>
+
+<h3>Visualization/Benchmark Evaluation (If Applicable)</h3>
+
+<p>If the tool:</p>
+<ul>
+    <li>Generates visualizations — evaluate them for validity</li>
+    <li>Claims benchmark performance — scrutinize those claims</li>
+    <li>Displays data or statistics — assess their accuracy and presentation</li>
+</ul>
+
+<h3>Source Evaluation</h3>
+
+<p>Use multiple sources beyond the tool's own marketing:</p>
+<ul>
+    <li>Independent reviews or analysis</li>
+    <li>Technical documentation</li>
+    <li>User discussions or forums</li>
+    <li>Your own observations</li>
+</ul>
+
+<p>Distinguish between claims you can verify and claims you cannot.</p>
+
+<h2>Document Structure</h2>
+
+<ol>
+    <li><strong>Executive Summary</strong> — Key findings and recommendation (one paragraph)</li>
+    <li><strong>Tool Identification</strong> — What type of model is this? How does it work?</li>
+    <li><strong>Framework Analysis</strong> — Findings for each of the six components</li>
+    <li><strong>Testing Documentation</strong> — What you tested, methodology, results</li>
+    <li><strong>Conclusions</strong> — Overall assessment, trade-offs, who should/shouldn't use this</li>
+    <li><strong>Sources</strong> — What sources you consulted</li>
+</ol>
+
+<h2>What Makes a Strong Evaluation</h2>
+
+<ul>
+    <li><strong>Efficient framework application</strong> — All components addressed, time well-prioritized</li>
+    <li><strong>Specific evidence</strong> — Concrete examples from your testing, not vague impressions</li>
+    <li><strong>Critical thinking</strong> — Questions claims, notes gaps, acknowledges limitations</li>
+    <li><strong>Practical recommendations</strong> — Clear guidance on who should use this and how</li>
+    <li><strong>Professional communication</strong> — Clear, organized, appropriate for the audience</li>
+</ul>
+
+<h2>What to Avoid</h2>
+
+<ul>
+    <li><strong>Surface-level testing</strong> — Try a few things and declare success or failure</li>
+    <li><strong>Marketing echo</strong> — Repeating company claims without verification</li>
+    <li><strong>Missing components</strong> — Skipping framework areas you find difficult</li>
+    <li><strong>Unsupported conclusions</strong> — Making claims without evidence</li>
+    <li><strong>Panic response</strong> — Rushing without systematic approach</li>
+</ul>
+
+<div class="important">
+    <p><strong>Time management is part of the assessment.</strong> You have one week, not one day. Start early, work systematically, and leave time for writing and revision.</p>
+</div>
+
+<h2>Grading</h2>
+
+<p>See the Grading Rubrics document for detailed criteria. In summary:</p>
+
+<table>
+    <tr>
+        <th>Criterion</th>
+        <th>Weight</th>
+    </tr>
+    <tr>
+        <td>Tool Understanding (model type, how it works)</td>
+        <td>15%</td>
+    </tr>
+    <tr>
+        <td>Framework Application (all six components)</td>
+        <td>25%</td>
+    </tr>
+    <tr>
+        <td>Evidence & Testing (methodology, documentation)</td>
+        <td>20%</td>
+    </tr>
+    <tr>
+        <td>Visualization Evaluation (if applicable)</td>
+        <td>15%</td>
+    </tr>
+    <tr>
+        <td>Source Evaluation (multiple, credible, critical)</td>
+        <td>10%</td>
+    </tr>
+    <tr>
+        <td>Communication (clarity, organization, professionalism)</td>
+        <td>15%</td>
+    </tr>
+</table>
+
+<h2>Preparation</h2>
+
+<p>The best preparation for this exercise is the work you've already done:</p>
+
+<ul>
+    <li>Your AI Tool Audit gave you practice applying the full framework</li>
+    <li>Weekly activities built your skills in each component</li>
+    <li>Your portfolio documents your growth and approach</li>
+</ul>
+
+<p>Before the tool reveal, review:</p>
+<ul>
+    <li>The evaluation framework components</li>
+    <li>Your AI Tool Audit — what worked well? What would you do differently?</li>
+    <li>Your notes on effective testing strategies</li>
+</ul>
+
+<h2>Academic Integrity</h2>
+
+<div class="important">
+    <p>This must be your own evaluation. You may:</p>
+    <ul>
+        <li>Use AI tools to help with writing mechanics</li>
+        <li>Consult publicly available information about the tool</li>
+        <li>Discuss general strategies with classmates (before the exercise)</li>
+    </ul>
+    <p>You may NOT:</p>
+    <ul>
+        <li>Have AI tools conduct the evaluation for you</li>
+        <li>Share your evaluation or findings with classmates during the exercise</li>
+        <li>Submit work that is not substantially your own analysis</li>
+    </ul>
+    <p>If you use AI assistance, disclose how in your submission.</p>
+</div>
+
+<h2>Submission</h2>
+
+<p>Submit as a Word document (.docx) or PDF through Canvas by the deadline.</p>
+
+<p>Include any screenshots or evidence as embedded images.</p>
+
+</body>
+</html>

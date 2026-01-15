@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCI 247: AI Tool Audit</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #1a5276;
+            border-bottom: 3px solid #1a5276;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2874a6;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #1a5276;
+            margin-top: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #2874a6;
+            color: white;
+        }
+        .overview {
+            background-color: #f8f9fa;
+            border-left: 4px solid #2874a6;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .note {
+            background-color: #fff9e6;
+            border-left: 4px solid #f0ad4e;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .important {
+            background-color: #fce4e4;
+            border-left: 4px solid #c0392b;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        ul, ol {
+            margin: 10px 0;
+        }
+        li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>AI Tool Audit</h1>
+
+<p style="color: #666; font-size: 0.9em;"><em>Document version: 1.0 | Last updated: January 2026</em></p>
+
+<div class="overview">
+    <p><strong>Weight:</strong> 25% of final grade</p>
+    <p><strong>Due:</strong> End of Week 3 (online) / Week 6 (in-person)</p>
+    <p><strong>Format:</strong> Written report, 1500-2500 words</p>
+</div>
+
+<h2>Overview</h2>
+
+<p>You will select an AI tool you haven't used before and evaluate it using the course evaluation framework. This assessment demonstrates your ability to systematically analyze any AI technology—a skill you'll use throughout your career.</p>
+
+<h2>Requirements</h2>
+
+<h3>1. Select a Tool</h3>
+
+<p>Choose an AI tool that:</p>
+<ul>
+    <li>You have <strong>not used before</strong> this course</li>
+    <li>Has a <strong>free tier</strong> you can actually test</li>
+    <li>Is <strong>not</strong> ChatGPT, Claude, or Gemini (we use these in class)</li>
+</ul>
+
+<p>Examples of appropriate tools:</p>
+<ul>
+    <li>AI writing assistants (Jasper, Copy.ai, Writesonic)</li>
+    <li>Image generators (Midjourney, Leonardo, Ideogram)</li>
+    <li>Code assistants (Cursor, Codeium, Tabnine)</li>
+    <li>AI search engines (Perplexity, You.com)</li>
+    <li>Specialized tools (AI transcription, AI note-taking, AI tutoring)</li>
+</ul>
+
+<div class="note">
+    <p><strong>Not sure if your choice is appropriate?</strong> Post in the Q&A forum or email the instructor before you start.</p>
+</div>
+
+<h3>2. Apply the Evaluation Framework</h3>
+
+<p>Your audit must address all six components of the evaluation framework:</p>
+
+<table>
+    <tr>
+        <th>Component</th>
+        <th>Questions to Address</th>
+    </tr>
+    <tr>
+        <td><strong>Function</strong></td>
+        <td>What does it claim to do? Does it actually do that? How well? Under what conditions does it succeed or fail?</td>
+    </tr>
+    <tr>
+        <td><strong>Data</strong></td>
+        <td>What is it trained on? What data does it collect from you? Is this information disclosed? What can you infer?</td>
+    </tr>
+    <tr>
+        <td><strong>Failures</strong></td>
+        <td>Where does it break? How badly? What are the consequences of failure? Did you observe any failures in testing?</td>
+    </tr>
+    <tr>
+        <td><strong>Access</strong></td>
+        <td>Who can use this? What barriers exist (cost, technical skill, language, disability)? Who is excluded?</td>
+    </tr>
+    <tr>
+        <td><strong>Terms</strong></td>
+        <td>What are you agreeing to? Who owns what you create? How is your data used? What rights do you give up?</td>
+    </tr>
+    <tr>
+        <td><strong>Broader Impact</strong></td>
+        <td>What happens if everyone uses this? Who benefits? Who might be harmed? What are the second-order effects?</td>
+    </tr>
+</table>
+
+<h3>3. Identify the Model Type</h3>
+
+<p>Explain what type of AI model powers this tool:</p>
+<ul>
+    <li>Is it an LLM, image generator, classifier, recommendation system, or something else?</li>
+    <li>How does knowing the model type inform your understanding of its capabilities and limitations?</li>
+    <li>What can you infer about how it works based on its behavior?</li>
+</ul>
+
+<h3>4. Use Multiple Sources</h3>
+
+<p>Don't just rely on the company's marketing. Your audit should include:</p>
+<ul>
+    <li>Official documentation (website, help docs, terms of service)</li>
+    <li>Independent reviews or analysis</li>
+    <li>Your own testing and observations</li>
+</ul>
+
+<p>Distinguish between what the company claims and what you can verify.</p>
+
+<h3>5. Draw Conclusions</h3>
+
+<p>End with your overall assessment:</p>
+<ul>
+    <li>Would you recommend this tool? For whom? Under what circumstances?</li>
+    <li>What are the key trade-offs users should consider?</li>
+    <li>What information is missing that you'd want before relying on this tool?</li>
+</ul>
+
+<h2>Document Structure</h2>
+
+<p>Organize your audit as follows:</p>
+
+<ol>
+    <li><strong>Introduction</strong> — What tool did you evaluate and why?</li>
+    <li><strong>Tool Overview</strong> — What type of model is it? What does it claim to do?</li>
+    <li><strong>Framework Analysis</strong> — One section for each of the six framework components</li>
+    <li><strong>Conclusions</strong> — Your overall assessment and recommendations</li>
+    <li><strong>Sources</strong> — List all sources consulted</li>
+</ol>
+
+<h2>What Makes a Strong Audit</h2>
+
+<ul>
+    <li><strong>Specific evidence</strong> — Don't just say "it sometimes fails." Describe what you tested and what happened.</li>
+    <li><strong>Critical thinking</strong> — Question claims. Note what's missing. Identify what you couldn't verify.</li>
+    <li><strong>Nuance</strong> — Most tools aren't all good or all bad. Acknowledge trade-offs.</li>
+    <li><strong>Clear writing</strong> — Someone unfamiliar with the tool should understand your analysis.</li>
+</ul>
+
+<h2>What to Avoid</h2>
+
+<ul>
+    <li><strong>Marketing summaries</strong> — Don't just repeat what the company says.</li>
+    <li><strong>Surface-level testing</strong> — Actually use the tool. Try to break it.</li>
+    <li><strong>Missing components</strong> — All six framework areas must be addressed.</li>
+    <li><strong>Unsupported conclusions</strong> — Every claim should have evidence.</li>
+</ul>
+
+<div class="important">
+    <p><strong>Academic Integrity:</strong> This must be your own analysis. You may use AI tools to help with writing mechanics, but the evaluation, testing, and conclusions must be your own work. If you use AI assistance, disclose how.</p>
+</div>
+
+<h2>Grading</h2>
+
+<p>See the Grading Rubrics document for detailed criteria. In summary:</p>
+
+<table>
+    <tr>
+        <th>Criterion</th>
+        <th>Weight</th>
+    </tr>
+    <tr>
+        <td>Tool Understanding (model type, how it works)</td>
+        <td>20%</td>
+    </tr>
+    <tr>
+        <td>Framework Application (all six components)</td>
+        <td>30%</td>
+    </tr>
+    <tr>
+        <td>Source Evaluation (multiple, credible, critical)</td>
+        <td>20%</td>
+    </tr>
+    <tr>
+        <td>Analysis Quality (nuance, evidence, conclusions)</td>
+        <td>20%</td>
+    </tr>
+    <tr>
+        <td>Presentation (organization, clarity, writing)</td>
+        <td>10%</td>
+    </tr>
+</table>
+
+<h2>Submission</h2>
+
+<p>Submit as a Word document (.docx) or PDF through Canvas by the deadline.</p>
+
+</body>
+</html>

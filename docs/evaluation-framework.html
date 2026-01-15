@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCI 247: AI Evaluation Framework</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #1a5276;
+            border-bottom: 3px solid #1a5276;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2874a6;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #1a5276;
+            margin-top: 20px;
+        }
+        .intro {
+            background-color: #f8f9fa;
+            border-left: 4px solid #2874a6;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .component {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .component h3 {
+            margin-top: 0;
+            color: #2874a6;
+            border-bottom: 2px solid #2874a6;
+            padding-bottom: 8px;
+        }
+        .questions {
+            background-color: #e8f4f8;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .note {
+            background-color: #fff9e6;
+            border-left: 4px solid #f0ad4e;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .important {
+            background-color: #fce4e4;
+            border-left: 4px solid #c0392b;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        ul, ol {
+            margin: 10px 0;
+        }
+        li {
+            margin: 8px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #2874a6;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h1>The AI Evaluation Framework</h1>
+
+<p style="color: #666; font-size: 0.9em;"><em>Document version: 1.0 | Last updated: January 2026</em></p>
+
+<div class="intro">
+    <p>This framework gives you a systematic approach to evaluating any AI tool—whether it's a chatbot, image generator, code assistant, or something that doesn't exist yet. Instead of reacting to hype or dismissing tools out of hand, you'll learn to ask the right questions.</p>
+    <p>The framework has six components. Each addresses a different dimension of how AI tools work, who they affect, and what you're agreeing to when you use them.</p>
+</div>
+
+<h2>Why a Framework?</h2>
+
+<p>AI tools are released faster than anyone can track. Marketing promises are bold. Technical details are often hidden. Without a systematic approach, you're left with two options:</p>
+
+<ol>
+    <li><strong>Trust blindly</strong> — Accept marketing claims and hope for the best</li>
+    <li><strong>Reject reflexively</strong> — Dismiss new tools as hype without understanding them</li>
+</ol>
+
+<p>Neither approach serves you well. The framework gives you a third option: <strong>evaluate systematically</strong>. It works for any AI tool because it focuses on questions that matter regardless of the specific technology.</p>
+
+<h2>The Six Components</h2>
+
+<div class="component">
+    <h3>1. Function</h3>
+    <p><strong>Core question:</strong> What does this tool actually do—and how well does it do it?</p>
+
+    <p>Start with what the tool claims to do, then test whether it delivers. Look beyond marketing to understand the boundaries of its capabilities.</p>
+
+    <div class="questions">
+        <strong>Questions to ask:</strong>
+        <ul>
+            <li>What does the marketing claim this tool can do?</li>
+            <li>What does it actually do when you test it?</li>
+            <li>Under what conditions does it work well?</li>
+            <li>Where does it struggle or fail?</li>
+            <li>What tasks is it genuinely useful for?</li>
+            <li>What tasks should you avoid using it for?</li>
+        </ul>
+    </div>
+
+    <p><strong>Why it matters:</strong> Marketing sells possibility. You need to understand reality. A tool that's "90% accurate" sounds good until you realize the 10% failure rate means it breaks multiple times per hour in heavy use.</p>
+</div>
+
+<div class="component">
+    <h3>2. Data</h3>
+    <p><strong>Core question:</strong> What data shaped this tool, and what data does it collect from you?</p>
+
+    <p>AI tools are built on data—often vast amounts of it. Understanding what data trained the model helps you predict its biases, blind spots, and limitations. Understanding what data it collects from you helps you make informed privacy decisions.</p>
+
+    <div class="questions">
+        <strong>Questions to ask:</strong>
+        <ul>
+            <li>What data was the model trained on?</li>
+            <li>Is training data disclosed? If not, what can you infer?</li>
+            <li>What perspectives or sources might be overrepresented?</li>
+            <li>What might be missing or underrepresented?</li>
+            <li>What data does the tool collect when you use it?</li>
+            <li>Is your input used to improve the model?</li>
+            <li>Who has access to your data?</li>
+        </ul>
+    </div>
+
+    <p><strong>Why it matters:</strong> A model trained primarily on English text will struggle with other languages. A model trained on internet data will reflect internet biases. A model that stores your inputs may expose them in ways you didn't anticipate.</p>
+</div>
+
+<div class="component">
+    <h3>3. Failures</h3>
+    <p><strong>Core question:</strong> How and when does this tool fail, and what are the consequences?</p>
+
+    <p>Every AI tool fails. The question isn't whether it will fail, but how—and whether you can detect failures when they happen. Some failures are obvious; others look like confident, correct outputs.</p>
+
+    <div class="questions">
+        <strong>Questions to ask:</strong>
+        <ul>
+            <li>What kinds of errors does this tool make?</li>
+            <li>Can you tell when it's wrong? Does it signal uncertainty?</li>
+            <li>What happens when it fails—minor inconvenience or serious harm?</li>
+            <li>Are there patterns to when it fails?</li>
+            <li>What safeguards exist against failure?</li>
+            <li>Who is responsible when failures cause harm?</li>
+        </ul>
+    </div>
+
+    <p><strong>Why it matters:</strong> Failures that look like successes are the most dangerous. An AI that confidently generates false citations, incorrect medical information, or buggy code is more dangerous than one that says "I don't know."</p>
+</div>
+
+<div class="component">
+    <h3>4. Access</h3>
+    <p><strong>Core question:</strong> Who can use this tool, and who is excluded?</p>
+
+    <p>Technology access is rarely equal. Consider what barriers exist—financial, technical, linguistic, physical—and who ends up on which side of those barriers.</p>
+
+    <div class="questions">
+        <strong>Questions to ask:</strong>
+        <ul>
+            <li>How much does it cost? Is there a free tier? What are its limits?</li>
+            <li>What technical skills are required to use it effectively?</li>
+            <li>What languages does it support? How well?</li>
+            <li>Is it accessible to users with disabilities?</li>
+            <li>What devices or internet connection does it require?</li>
+            <li>Are there geographic restrictions?</li>
+            <li>Who benefits most? Who is left out?</li>
+        </ul>
+    </div>
+
+    <p><strong>Why it matters:</strong> Tools that claim to "democratize" AI often still require technical knowledge, reliable internet, or fluency in English. Understanding access patterns helps you assess who actually benefits from these technologies.</p>
+</div>
+
+<div class="component">
+    <h3>5. Terms</h3>
+    <p><strong>Core question:</strong> What are you agreeing to when you use this tool?</p>
+
+    <p>Terms of service and privacy policies are legal contracts. Most people don't read them, but they govern what the company can do with your data and what rights you have (or don't have).</p>
+
+    <div class="questions">
+        <strong>Questions to ask:</strong>
+        <ul>
+            <li>Who owns content you create with this tool?</li>
+            <li>Can the company use your inputs to train their models?</li>
+            <li>Can they share your data with third parties?</li>
+            <li>What happens to your data if you delete your account?</li>
+            <li>Can you opt out of data collection?</li>
+            <li>What liability does the company accept for errors or harm?</li>
+            <li>Can terms change, and how will you be notified?</li>
+        </ul>
+    </div>
+
+    <p><strong>Why it matters:</strong> You might be surprised what you've agreed to. Some tools claim rights to everything you create. Others explicitly use your inputs for training. Reading the fine print is the only way to know what you're actually consenting to.</p>
+</div>
+
+<div class="component">
+    <h3>6. Broader Impact</h3>
+    <p><strong>Core question:</strong> What happens if this tool is widely adopted?</p>
+
+    <p>Individual use decisions aggregate into societal effects. Think beyond your personal use case to consider how widespread adoption might change industries, relationships, or power dynamics.</p>
+
+    <div class="questions">
+        <strong>Questions to ask:</strong>
+        <ul>
+            <li>If everyone used this, what would change?</li>
+            <li>Who benefits most from widespread adoption?</li>
+            <li>Who might be harmed—and how?</li>
+            <li>What jobs, skills, or industries might be affected?</li>
+            <li>What happens to human expertise in this area?</li>
+            <li>Are there environmental costs (energy, resources)?</li>
+            <li>How might this tool be misused?</li>
+            <li>What second-order effects might emerge?</li>
+        </ul>
+    </div>
+
+    <p><strong>Why it matters:</strong> Your individual use might be harmless, but collective adoption can transform society in ways that benefit some groups while harming others. Thinking at scale helps you understand what you're participating in.</p>
+</div>
+
+<h2>Using the Framework</h2>
+
+<h3>Not Everything Needs Equal Depth</h3>
+
+<p>The framework gives you six lenses, but not every evaluation needs the same depth on each component. Adjust based on:</p>
+
+<ul>
+    <li><strong>Your purpose</strong> — A tool for casual use deserves less scrutiny than one handling sensitive data</li>
+    <li><strong>Available information</strong> — Some components may be easier to investigate than others</li>
+    <li><strong>Time constraints</strong> — Quick assessments might prioritize Function and Failures; deeper audits cover all six</li>
+</ul>
+
+<h3>Information Won't Always Be Available</h3>
+
+<p>Many AI companies are not transparent about training data, failure rates, or internal processes. When information is missing:</p>
+
+<ul>
+    <li>Note what you couldn't find</li>
+    <li>Consider why it might be hidden</li>
+    <li>Make reasonable inferences where possible</li>
+    <li>Acknowledge uncertainty in your conclusions</li>
+</ul>
+
+<div class="note">
+    <p><strong>Missing information is itself information.</strong> A company that won't disclose training data may be hiding something—or may simply have never considered transparency a priority. Either way, it affects your ability to evaluate the tool.</p>
+</div>
+
+<h3>Your Conclusions Should Be Nuanced</h3>
+
+<p>Most AI tools aren't simply "good" or "bad." Strong evaluations:</p>
+
+<ul>
+    <li>Identify specific strengths and weaknesses</li>
+    <li>Recommend uses where the tool excels</li>
+    <li>Warn against uses where it fails</li>
+    <li>Acknowledge trade-offs the user must weigh</li>
+    <li>Note what information would change your assessment</li>
+</ul>
+
+<h2>Quick Reference</h2>
+
+<table>
+    <tr>
+        <th>Component</th>
+        <th>Core Question</th>
+    </tr>
+    <tr>
+        <td><strong>Function</strong></td>
+        <td>What does it actually do, and how well?</td>
+    </tr>
+    <tr>
+        <td><strong>Data</strong></td>
+        <td>What shaped it, and what does it collect?</td>
+    </tr>
+    <tr>
+        <td><strong>Failures</strong></td>
+        <td>How and when does it fail?</td>
+    </tr>
+    <tr>
+        <td><strong>Access</strong></td>
+        <td>Who can use it, and who is excluded?</td>
+    </tr>
+    <tr>
+        <td><strong>Terms</strong></td>
+        <td>What are you agreeing to?</td>
+    </tr>
+    <tr>
+        <td><strong>Broader Impact</strong></td>
+        <td>What happens at scale?</td>
+    </tr>
+</table>
+
+<h2>Applying the Framework in This Course</h2>
+
+<p>You'll use this framework throughout the course:</p>
+
+<ul>
+    <li><strong>Weekly activities</strong> — Practice individual components</li>
+    <li><strong>AI Tool Audit</strong> — Apply all six components to a tool you haven't used before</li>
+    <li><strong>Tool Adaptability Exercise</strong> — Demonstrate framework mastery under time pressure</li>
+</ul>
+
+<p>By the end of the course, this framework should feel natural—a mental checklist you can apply to any new technology you encounter.</p>
+
+</body>
+</html>
