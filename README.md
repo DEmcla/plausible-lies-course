@@ -17,7 +17,7 @@ Students graduate without knowing how to evaluate the tools they'll use for the 
 - **Terms**: What am I agreeing to?
 - **Broader Impact**: What happens at scale? Who benefits? Who's harmed?
 
-The framework predates AI and will outlast current tools. AI is just our test case.
+The framework for evaluating technology predates AI and will outlast current tools. AI is just our test case.
 
 ---
 
